@@ -1,0 +1,30 @@
+/* MEDIA MIN 768 */
+/* ===========================*/
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* ===========================*/
+/* END MEDIA MIN 768 */
+
+
+/* MEDIA MIN 480 */
+/* ===========================*/
+@media (min-width: 480px) and (max-width: 767px) {
+}
+/* ===========================*/
+/* END MEDIA MIN 480 */
+
+
+/* MEDIA MIN 320 */
+/* ===========================*/
+@media (min-width: 320px) and (max-width: 479px) {
+}
+/* ===========================*/
+/* END MEDIA MIN 320 */
+
+
+/* MEDIA MIN 240 */
+/* ===========================*/
+@media (min-width: 240px) and (max-width: 319px) {
+}
+/* ===========================*/
+/* END MEDIA MIN 240 */

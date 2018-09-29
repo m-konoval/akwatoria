@@ -1,0 +1,100 @@
+
+/* TITLES */
+
+.slug {
+    font-family: inherit;
+    font-size: 24px;
+    color: #2aabd2;
+    text-align: center;
+    opacity: 0.7;
+    text-shadow: 1px 1px 2px #999;
+}
+
+h1 {
+    font-size: 29px;
+    font-weight: bold;
+    color: #999;
+    text-align: center;
+    text-transform: lowercase;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 * {
+    display: table;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1:hover {
+    opacity: 0.7;
+}
+
+h1 span.blue {
+    color: #2aabd2;
+    text-shadow: 1px 1px 2px #999;
+    text-transform: uppercase;
+}
+
+h1 span:before {
+    content: '';
+    background-color: #999;
+    width: 0px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+h1 span.blue:before {
+    background-color: #2aabd2;
+}
+
+h1:hover span:before {
+    width: 100%;
+}
+
+.btn {
+    min-width: 146px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #c00;
+    padding: 10px 15px;
+    color: #666;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin: 0 5px;
+
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #c00;
+    color: #fff;
+}
+
+.phones {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    min-width: 180px;
+}
+
+.phones a {
+    display: block;
+    color: #c00;
+    font-size: 18px;
+    margin: 0px 0 5px;
+    text-decoration: none;
+    text-align: right;
+}
