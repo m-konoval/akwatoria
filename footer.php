@@ -2,11 +2,10 @@
         <div class="copy">&copy; Всі права захищені АКВАТОРІЯ <?php echo date(Y); ?>p.</div>
     </footer><!-- /footer -->
 
-
     <!-- POPUP-addres -->
-    <div class="wrapPop jsOrderPopupForm">
+    <div class="wrapPop" id="popup__order">
         <div class="popup">
-            <form action="mailto.php" method="post" class="form_pop">
+            <form action="<?php echo THEME_URI; ?>/mailto.php" method="post" class="form_pop">
                 <label for="u-name">Введіть ім'я:</label>
                 <input type="text" placeholder="Ваше ім'я..." id="u-name" name="u_name" required>
                 <label for="u-phone">Введіть номер телефона:</label>
@@ -27,9 +26,9 @@
 
 
     <!-- POPUP-Call -->
-    <div class="wrapPop jsCallBackPopupForm">
+    <div class="wrapPop" id="popup__call">
         <div class="popup">
-            <form action="callback.php" class="form_pop" method="post">
+            <form action="<?php echo THEME_URI; ?>/callback.php" class="form_pop" method="post">
                 <label for="call_phone">Ваш номер телефону</label>
                 <input type="text" id="call_phone" name="callback_phone" placeholder="Введіть номер ..." required>
                 <button class="send">Передзвонити</button>
@@ -37,8 +36,8 @@
             </form>
         </div>
     </div>
-</div>
 
     <?php wp_footer(); ?>
+</div>
 </body>
 </html>

@@ -9,7 +9,7 @@ jQuery(document).ready(function($){
         nav: true,
         dots: true
     }); // OWL
-    
+
     
     function pupup(btn, form) {
         $(btn).on('click', function () {
@@ -55,9 +55,9 @@ jQuery(document).ready(function($){
             }
         }
 
-        minus.on('click', event);1
+        minus.on('click', event);
         plus.on('click', event);
-    }
-    calcWater();
+
+    } calcWater();
 });
 
