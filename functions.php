@@ -24,10 +24,15 @@ function frontend_enqueue_scripts() {
     wp_register_script( 'jquery', 'http' . ($_SERVER['SERVER_PORT'] == 443 ? 's' : '') . '://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', false, null);
     wp_register_script( 'owl-js', THEME_URI . '/js/owl.carousel.min.js', array(), '1.0.0', true);
     wp_register_script( 'init', THEME_URI . '/js/init_script.js', array(), '1.0.0', true);
+    wp_register_script( 'filter', THEME_URI . '/js/filter-category.js', array(), '1.0.0', true);
+
+    wp_localize_script('init', 'AJAX_OBJ', array( 'url' => admin_url( 'admin-ajax.php' )));
 
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'owl-js');
     wp_enqueue_script( 'init');
+    wp_enqueue_script( 'filter');
+
 
     // Styles
     wp_register_style( 'theme', THEME_URI . '/style.css' );
@@ -56,3 +61,17 @@ if ( function_exists( 'add_image_size' ) ) {
 }
 if (function_exists('add_theme_support'))
     add_theme_support('post-thumbnails');
+
+
+
+/* helpers */
+function show_arr ($arr) {
+    echo '<pre>' . print_r($arr, 1) . '</pre>';
+}
+
+
+/* INCLUDES */
+/* -------------------------- */
+
+include ('/functions/category_filter.php');
+include ('/functions/post-thumnail.php');

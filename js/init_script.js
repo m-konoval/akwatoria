@@ -10,7 +10,7 @@ jQuery(document).ready(function($){
         dots: true
     }); // OWL
 
-    
+
     function pupup(btn, form) {
         $(btn).on('click', function () {
             $(form).fadeIn(300);
@@ -60,4 +60,3 @@ jQuery(document).ready(function($){
 
     } calcWater();
 });
-

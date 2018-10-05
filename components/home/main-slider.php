@@ -1,9 +1,12 @@
 <?php
-    $shelves = get_category_by_slug('shelves');
-    $coolers = get_category_by_slug('coolers');
-    $pumps = get_category_by_slug('pumps');
+    $shelves    = get_category_by_slug('shelves');
+    $coolers    = get_category_by_slug('coolers');
+    $pumps      = get_category_by_slug('pumps');
     $dispensers = get_category_by_slug('dispensers');
-    $water = get_category_by_slug('water');
+
+    $water = get_page_by_path('about_water');
+
+    show_arr($water);
 ?>
 
 <ul class="slider-main clearfix">
