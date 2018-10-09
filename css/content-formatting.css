@@ -1,0 +1,155 @@
+.content-formatting {
+    width: 100%;
+    height: auto;
+}
+
+/* aling */
+/* ===========================*/
+.content-formatting.alignnone {
+}
+.content-formatting .aligncenter,
+.content-formatting div.aligncenter {
+    display: block;
+}
+.content-formatting .alignright {
+    float: right;
+}
+.content-formatting .alignleft {
+    float: left;
+}
+.content-formatting .aligncenter {
+    display: block;
+}
+
+/* image */
+/* ===========================*/
+.content-formatting img {
+    max-width: 100%;
+    height: auto;
+}
+.content-formatting img.alignright {
+    margin: 0;
+    float: right;
+}
+.content-formatting a img.alignright {
+    margin: 0;
+    float: right;
+}
+.content-formatting p img.alignright {
+    margin: 0;
+    float: right;
+}
+.content-formatting img.alignnone {
+    margin: 0;
+}
+.content-formatting img.alignleft {
+    margin: 0;
+    float: left;
+}
+.content-formatting a img.alignleft {
+    margin: 0;
+    float: left;
+}
+.content-formatting p img.alignleft {
+    margin: 0;
+    float: left;
+}
+.content-formatting img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.content-formatting .thumbnail img {
+    display: block;
+}
+.content-formatting a.image_center {
+    display: table;
+    margin: 0 auto;
+}
+
+/* text */
+/* ===========================*/
+.content-formatting iframe {
+    display: block;
+    margin: 0 auto;
+}
+.content-formatting object {
+    display: block;
+    margin: 0 auto;
+}
+.content-formatting p {
+    color: #034380;
+}
+.content-formatting a {
+    text-decoration: underline;
+}
+.content-formatting a:hover {
+    text-decoration: none;
+}
+.content-formatting strong,
+.content-formatting b {
+    font-weight: bold;
+}
+.content-formatting strong *,
+.content-formatting b * {
+    font-weight: bold;
+}
+.content-formatting p strong *,
+.content-formatting p b * {
+        font-weight:bold;
+        }
+.content-formatting em {
+    font-style: italic;
+}
+.content-formatting em strong {
+    font-style: italic;
+}
+.content-formatting i,
+.content-formatting p i {
+    font-style: italic;
+}
+.content-formatting blockquote {
+}
+.content-formatting blockquote p:first-child {
+    }
+
+/* h1-h6 */
+/* ===========================*/
+.content-formatting h1,
+.content-formatting h2,
+.content-formatting h3,
+.content-formatting h4,
+.content-formatting h5,
+.content-formatting h6 {
+}
+.content-formatting h6 {
+}
+.content-formatting h5 {
+}
+.content-formatting h4 {
+}
+.content-formatting h3 {
+}
+.content-formatting h2 {
+}
+.content-formatting h1 {
+}
+
+/* ul, ol */
+/* ===========================*/
+.content-formatting ul,
+.content-formatting ol {
+}
+.content-formatting ul {
+    list-style: disc;
+}
+.content-formatting ol {
+}
+.content-formatting ul li {
+}
+.content-formatting ul li:before {
+}
+.content-formatting ol li {
+}
+.content-formatting ol li:before {
+}

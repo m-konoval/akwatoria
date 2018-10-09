@@ -1,23 +1,15 @@
-<div class="info-block">
-    <p class="price_list _row">
-        <span class="_col info__col">
-            <span class="info__name">1 бутель</span>
-            <span class="info__value">70 грн.</span>
-        </span>
+<?php
+    $home = get_page_by_path('home');
+    $home_q = new WP_Query( array( 'page_id' => $home-> ID ) );
 
-        <span class="_col info__col">
-            <span class="info__name">2-7 бутлів</span>
-            <span class="info__value">60 грн.</span>
-        </span>
+    if( $home_q -> have_posts() ) {
+        while( $home_q -> have_posts() ) {
+            $home_q->the_post(); ?>
 
-        <span class="_col info__col">
-            <span class="info__name">8-13 бутлів</span>
-            <span class="info__value">55 грн.</span>
-        </span>
+            <div class="info-block">
+                <?php the_content();?>
+            </div>
 
-        <span class="_col info__col">
-            <span class="info__name">14+ бутлів</span>
-            <span class="info__value">50 грн.</span>
-        </span>
-    </p>
-</div>
+         <?php } wp_reset_postdata();
+    }
+?>

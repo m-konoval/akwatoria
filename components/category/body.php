@@ -4,8 +4,13 @@
     global $post;
     $per_page  = 10;
     $all_posts = wp_count_posts( 'post' )->publish;
-    $cur_cat   = '';
-    $CAT_scope = new WP_Query(array('posts_per_page' => $per_page));
+    $cur_cat   = $current_cat -> slug;
+    $CAT_arg   = array(
+        'posts_per_page' => $per_page,
+        'category_name' => $cur_cat
+    );
+
+    $CAT_scope = new WP_Query($CAT_arg);
 
     if( $CAT_scope -> have_posts() ) {
         while( $CAT_scope -> have_posts() ) { $CAT_scope -> the_post(); ?>

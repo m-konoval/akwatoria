@@ -4,9 +4,8 @@
     $pumps      = get_category_by_slug('pumps');
     $dispensers = get_category_by_slug('dispensers');
 
-    $water = get_page_by_path('about_water');
-
-    show_arr($water);
+    $water       = get_page_by_path('about_water');
+    $water_price = get_metadata('post', $water -> ID, 'price', true);
 ?>
 
 <ul class="slider-main clearfix">
@@ -40,9 +39,9 @@
     </li>
     <li>
         <img src="<?php echo THEME_URI; ?>/img/water.jpg" alt="<? echo $water -> name; ?>">
-        <a href="<?php echo get_category_link($water -> cat_ID ); ?>" class="wrap-mask">
-            <span class="mask"><? echo $water -> name; ?></span>
-            <span class="price_desc"><? echo $water -> category_description; ?></span>
+        <a href="<?php echo get_permalink($water -> ID); ?>" class="wrap-mask">
+            <span class="mask"><? echo $water -> post_title; ?></span>
+            <span class="price_desc"><? echo $water_price; ?></span>
         </a>
     </li>
 </ul><!-- /section-1 -->
