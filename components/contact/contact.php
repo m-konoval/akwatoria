@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <?php
-        $home = get_page_by_path('about_water');
+        $home = get_page_by_path('contact');
         $home_q = new WP_Query( array( 'page_id' => $home-> ID ) );
 
         if( $home_q -> have_posts() ) {
