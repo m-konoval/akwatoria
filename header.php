@@ -32,17 +32,21 @@
             <div class="_col header__panel">
                 <div class="header__block _to_right">
                     <div class="_row">
-                        <div class="btn" id="order">Замовити воду</div>
-                        <div class="btn" id="callback">Передзвонити</div>
+                        <div class="btn bottle" id="order">
+                            <span>Замовити воду</span>
+                        </div>
+                        <div class="btn call" id="callback">
+                            <span>Передзвонити</span>
+                        </div>
                     </div>
 
                     <div class="phones">
-                        <a href="tel:+380673178202">+38 (067) 317-82-02</a>
-                        <a href="tel:+380953424740">+38 (095) 34-24-740</a>
+                        <a class="ks" href="tel:+380673178202">+38 (067) 317-82-02</a>
+                        <a class="vph" href="tel:+380953424740">+38 (095) 34-24-740</a>
                     </div>
                 </div>
 
-                <div class="block menu _to_bottom">
+                <div class="menu _to_bottom">
                     <?php  wp_nav_menu( array( 'theme_location'  => 'main_menu' ) ); ?>
                 </div>
             </div>
