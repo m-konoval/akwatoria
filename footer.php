@@ -1,4 +1,4 @@
-    <footer class="clearfix container">
+    <footer class="footer">
         <div class="copy">&copy; Всі права захищені АКВАТОРІЯ <?php echo date(Y); ?>p.</div>
     </footer><!-- /footer -->
 

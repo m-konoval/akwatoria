@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<main class="container main">
+
     <?php
         $home = get_page_by_path('about_water');
         $home_q = new WP_Query( array( 'page_id' => $home-> ID ) );
@@ -15,5 +17,7 @@
             <?php } wp_reset_postdata();
         }
     ?>
+
+</main>
 
 <?php get_footer(); ?>

@@ -1,4 +1,11 @@
 /* FOOTER */
 footer {
-    height: 50px;
+    background: rgba( 230, 230, 230, 0.85 );
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #fff;
+    border-bottom: none;
+    margin-top: auto;
+    width: 1020px;
+    margin: auto auto 0;
+    padding: 20px 20px;
 }

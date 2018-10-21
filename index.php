@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container">
+<main class="container main">
 
     <?php
         if( is_page('home') ) {
@@ -9,6 +9,6 @@
         }
     ?>
 
-</div><!-- /container -->
+</main><!-- /container -->
 
 <?php get_footer(); ?>

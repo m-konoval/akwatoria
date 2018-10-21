@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="container category">
+<main class="container main category">
 
     <div class="category__head">
         <?php include('/components/category/head.php'); ?>
@@ -10,6 +10,6 @@
         <?php include('/components/category/body.php'); ?>
     </div>
 
-</div><!-- /container -->
+</main><!-- /container -->
 
 <?php get_footer(); ?>

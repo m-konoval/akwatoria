@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-    <div class="container">
+    <main class="container main">
         <?php
             if ( have_posts() ) { ?>
                 <?php while( have_posts()) {
@@ -17,7 +17,7 @@
                 <?php } //endwhile ?>
             <?php } //endif
         ?>
-    </div>
+    </main>
 
 
 <?php get_footer(); ?>
