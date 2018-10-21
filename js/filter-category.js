@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 
         // load more "false"
         if( !loadTriger ) {
-            if( actionBTN.parent().hasClass(currentClass) )
+            if( actionBTN.hasClass(currentClass) )
                 { return false; }
 
             $WEB_OPTIONS.attr(attr_current, 1);

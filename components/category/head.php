@@ -20,7 +20,7 @@
 
 <?php if ( $is_childs > 0 ) { ?>
 
-    <div class="_row">
+    <div class="_row category__filters">
         <button class="category__filter jsFilter category__filter_current"
             data-index="<?php echo $current_cat -> slug; ?>">
 
