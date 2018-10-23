@@ -1,5 +1,5 @@
 
-<div class="jsCategoryFilter">
+<div class="category__body jsCategoryFilter">
 <?php
     global $post;
     $per_page  = 10;
@@ -15,15 +15,21 @@
     if( $CAT_scope -> have_posts() ) {
         while( $CAT_scope -> have_posts() ) { $CAT_scope -> the_post(); ?>
 
-            <div class="wrap-item">
-                <a href="<?php echo get_permalink(); ?>" class="item">
-                    <span class="mask">
+            <div class="category__item">
+                <a href="<?php echo get_permalink(); ?>" class="category__item-link">
+                    <span class="category__item-mask">
                         <i class="icon-search-plus"></i>
                     </span>
-                    <figure href="#" class="item-img">
-                        <?php xs_post_thumbnail( array( 'image_size' => 'image-size-280x220' ) ); ?>
+                    <figure href="#" class="category__item-img">
+                        <?php xs_post_thumbnail( array( 'image_size' => 'image-size-300x300' ) ); ?>
                     </figure>
-                    <h3 class="title"><?php the_title(); ?></h3>
+                    <span class="category__item-details _col">
+                        <h3 class="category__item-title"><?php the_title(); ?></h3>
+                        <span class="category__item-price _row">
+                            <span>Ціна:</span>
+                            <span>800грн.</span>
+                        </span>
+                    </span>
                 </a>
             </div>
 

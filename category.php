@@ -6,7 +6,7 @@
         <?php include('/components/category/head.php'); ?>
     </div>
 
-    <div class="category__body">
+    <div class="category__body-wrap">
         <?php include('/components/category/body.php'); ?>
     </div>
 

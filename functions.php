@@ -32,8 +32,7 @@ register_nav_menu( 'main_menu', 'Главное меню' );
 
 /* Устанавливаем размер миниатюрам */
 if ( function_exists( 'add_image_size' ) ) {
-    add_image_size( 'image-size-280x220', 280, 220, true );
-    add_image_size( 'image-size-253x165', 253, 165, true );
+    add_image_size( 'image-size-300x300', 300, 300, true );
 }
 if (function_exists('add_theme_support'))
     add_theme_support('post-thumbnails');
