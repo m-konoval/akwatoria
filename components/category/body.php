@@ -25,9 +25,10 @@
                     </figure>
                     <span class="category__item-details _col">
                         <h3 class="category__item-title"><?php the_title(); ?></h3>
-                        <span class="category__item-price _row">
-                            <span>Ціна:</span>
-                            <span>800грн.</span>
+                        <span class="_row">
+                            <span class="category__item-price">Ціна:</span>
+                            <span><?php echo get_metadata('post', get_the_ID(), 'price', true);?></span>
+                            <span class="category__item-currency">грн.</span>
                         </span>
                     </span>
                 </a>
@@ -37,7 +38,7 @@
     <?php } // endif ?>
 </div>
 
-<?php if ($all_posts > $per_page ) { ?>
+<?php if ( false ) { ?>
     <button id="load-more" class="loadM">
         <span>Load More</span>
         <img class="loader" src="<?php echo THEME_URI; ?>/img/load-more.gif" alt="">

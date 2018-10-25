@@ -1,6 +1,11 @@
 <?php get_header(); ?>
 
     <main class="container main">
+
+<?php
+    echo do_shortcode( '[breadcrumb]' ); 
+?>
+
         <?php
             if ( have_posts() ) { ?>
                 <?php while( have_posts()) {

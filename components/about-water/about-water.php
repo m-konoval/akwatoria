@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="container main">
+<main class="container main page">
 
     <?php
         $home = get_page_by_path('about_water');
@@ -10,7 +10,9 @@
             while( $home_q -> have_posts() ) {
                 $home_q->the_post(); ?>
 
-                <div class="info-block">
+                <h2><?php the_title(); ?></h2>
+
+                <div class="content-formatting">
                     <?php the_content();?>
                 </div>
 
