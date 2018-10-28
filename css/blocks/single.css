@@ -1,0 +1,11 @@
+main.single {
+    padding-top: 20px;
+}
+
+.single__article {
+    position: relative;
+}
+
+.single__breadcrumb {
+    margin: -15px 0 0 -15px;
+}

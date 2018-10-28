@@ -77,6 +77,12 @@ ul {
     flex-direction: column;
 }
 
+._row-ai-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 ._to_right {
     margin-left: auto;
 }
