@@ -181,18 +181,29 @@ ul.menu {
     text-decoration: none;
     text-align: right;
     margin-bottom: 5px;
+    transition: 0.2s;
 }
 
 .phones a.ks {
     background-image: url("../../img/kyivstar_logo.png");
     background-size: 20px 18px;
-    color: #00A0FF;
+    color: rgb(0, 160, 255);
+}
+
+.phones a.ks:hover {
+    text-shadow: 1px 1px 0 rgba(0, 160, 255, 0.6);
+    color: rgb(10, 170, 255);
 }
 
 .phones a.vph {
     background-image: url("../../img/vodafone_logo.png");
     background-size: 20px 18px;
-    color: #E60000;
+    color: rgb(255, 0, 0);
+}
+
+.phones a.vph:hover {
+    text-shadow: 1px 1px 0 rgba(255, 0, 0, 0.6);
+    color: rgb(255, 10, 10);
 }
 
 .phones a:last-child {
