@@ -33,17 +33,24 @@ if( defined('DOING_AJAX') && DOING_AJAX ) {
             ob_start();
             while( $load_query -> have_posts() ) { $load_query -> the_post(); ?>
 
-                <div class="wrap-item someClass">
-                    <a href="<?php echo get_permalink(); ?>" class="item">
-                        <span class="mask">
-                            <i class="icon-search-plus"></i>
+            <div class="category__item">
+                <a href="<?php echo get_permalink(); ?>" class="category__item-link">
+                    <span class="category__item-mask">
+                        <i class="icon-search-plus"></i>
+                    </span>
+                    <figure href="#" class="category__item-img">
+                        <?php xs_post_thumbnail( array( 'image_size' => 'image-size-300x300' ) ); ?>
+                    </figure>
+                    <span class="category__item-details _col">
+                        <h3 class="category__item-title"><?php the_title(); ?></h3>
+                        <span class="_row">
+                            <span class="category__item-price">Ціна:</span>
+                            <span><?php echo get_metadata('post', get_the_ID(), 'price', true);?></span>
+                            <span class="category__item-currency">грн.</span>
                         </span>
-                        <figure href="#" class="item-img">
-                            <?php xs_post_thumbnail( array( 'image_size' => 'image-size-280x220' ) ); ?>
-                        </figure>
-                        <h3 class="title"><?php the_title(); ?></h3>
-                    </a>
-                </div>
+                    </span>
+                </a>
+            </div>
 
             <?php } // endwhile
             $content_posts = ob_get_contents();

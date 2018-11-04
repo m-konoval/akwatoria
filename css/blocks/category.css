@@ -9,6 +9,7 @@
 }
 
 .category__filters {
+    min-height: 34px;
     align-items: flex-end;
 }
 
