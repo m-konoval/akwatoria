@@ -209,3 +209,34 @@ ul.menu {
 .phones a:last-child {
     margin-bottom: 0;
 }
+
+
+
+
+
+#header .nav-box {background:url(images/nav-box-bg.gif) left top repeat-x;width:100%}
+#header .nav-box .left {background:url(images/nav-box-left.gif) no-repeat left top;
+    margin-top: 50px;}
+#header .nav-box .right {background:url(images/nav-box-right.gif) no-repeat right top;height:47px}
+/* header navigation */
+#header .nav-box ul {font-family:"Trebuchet MS",Arial,Helvetica,sans-serif; font-size: 12pt;}
+#header .nav-box ul li {display:inline}
+#header .nav-box ul li a {display:block;float:left;color:#fff;text-decoration:none}
+#header .nav-box ul li a em {display:block;float:left;font-style:normal;background:url(images/divider-left.gif) no-repeat left 10px}
+#header .nav-box ul li a em b {display:block;float:left;height:47px;line-height:47px;width:158px;text-align:center;cursor:pointer}
+#header .nav-box ul li a:hover {background:url(images/nav-act.gif) left top repeat-x}
+#header .nav-box ul li a:hover em {background:url(images/divider-left-act.gif) no-repeat left 10px}
+#header .nav-box ul li a:hover b {background:url(images/divider-right-act.gif) no-repeat right 10px}
+#header .nav-box ul li a.current {background:url(images/nav-act.gif) left top repeat-x}
+#header .nav-box ul li a.current em {background:url(images/divider-left-act.gif) no-repeat left 10px}
+#header .nav-box ul li a.current b {background:url(images/divider-right-act.gif) no-repeat right 10px}
+#header .nav-box ul li a.first em {background:none}
+#header .nav-box ul li a.first:hover em {background:url(images/nav-left-act.gif) no-repeat left top}
+#header .nav-box ul li a.first-current {background:url(images/nav-act.gif) left top repeat-x}
+#header .nav-box ul li a.first-current em {background:url(images/nav-left-act.gif) no-repeat left top !important}
+#header .nav-box ul li a.first-current b {background:url(images/divider-right-act.gif) no-repeat right 10px}
+#header .nav-box ul li a.last b {background:none;width:160px}
+#header .nav-box ul li a.last:hover b {background:url(images/nav-right-act.gif) no-repeat right top}
+#header .nav-box ul li a.last-current {background:url(images/nav-act.gif) left top repeat-x}
+#header .nav-box ul li a.last-current em {background:url(images/divider-left-act.gif) no-repeat left 10px}
+#header .nav-box ul li a.last-current b {background:url(images/nav-right-act.gif) no-repeat right top !important;width:160px}

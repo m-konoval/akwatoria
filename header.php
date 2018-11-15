@@ -16,7 +16,6 @@
     <title>
         <?php $title = wp_title("", true); echo "&#32;"; bloginfo('description'); ?>
     </title>
-
     <?php wp_head(); ?>
 </head>
 <body>

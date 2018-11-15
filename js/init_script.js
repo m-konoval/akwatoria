@@ -59,4 +59,55 @@ jQuery(document).ready(function($){
         plus.on('click', event);
 
     } calcWater();
+
+
+    // дальше можеш писати свої скрипти
+    var owlSingle = $('.jsPostSlider')
+    owlSingle.owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+
+    var owlDot = $('.jsPostDots');
+    owlDot.owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    })
+    // дальше можеш писати свої скрипти
+
+
+    // single gallery pagination
+    /* ------------------------------------ */
+    $('.jsDotItem').click(function () {
+        var index = $(this).attr('data-index');
+        owlSingle.trigger('to.owl.carousel', [index, 300, true]);
+    });
+
+
 });

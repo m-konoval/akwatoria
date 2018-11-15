@@ -20,6 +20,37 @@
         }
     ?>
 
+
+    <!-- contact-form -->
+    <form class="contact-form" method="post" action="<?php echo THEME_URI; ?>/form-actions/contact.php">
+        <div class="title">Форма зворотнього зв'язку</div>
+        <div class="_col">
+            <label class="text" for="message">Коментарій</label>
+            <textarea name="message" required ></textarea>
+        </div>
+        <div class="_row form-block">
+        <div class="_col">
+            <label for="name">Ім'я</label>
+            <input class="input" type="text"  placeholder="" maxlength="50" required />
+        </div>
+        <div class="_col">
+            <label for="email">Email:</label>
+            <input class="input" type="email" name="email" placeholder="" maxlength="120" required />
+        </div>
+        <button class="submit" type="submit">Відправити</button>
+    </div>
+
+
+
+
+
+
+    </form>
+    <!-- end contact-form -->
+
+
+
+
 </main>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?>contact-form

@@ -1,0 +1,42 @@
+/* style for contact-form */
+.contact-form .title{
+    font-family:Tahoma, sans-serif;
+    font-weight:bold;
+    font-size:24px;
+    margin-top: 10px;
+}
+label.text{
+    font-family:Tahoma, sans-serif;
+    font-size:16px;
+    margin-top: 10px;
+}
+textarea{
+    width: 500px;
+    height: 200px;
+    margin-top: 20px;
+    border: 1px solid rgba(80, 182, 241, 0.3);
+    border-radius: 3px;
+    resize: none;
+    padding: 5px;
+}
+input.input{
+    height: 40px;
+    margin-right: 30px;
+    border: 1px solid rgba(80, 182, 241, 0.3);
+    border-radius: 3px;
+    padding: 5px;
+}
+button.submit{
+    cursor: pointer;
+    background-color: rgba(80, 182, 241, 0.3);
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-left: auto;
+    border-radius: 3px;
+}
+.form-block{
+    align-items: flex-end;
+    width: 500px;
+    margin-top: 20px;
+}

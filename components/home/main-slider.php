@@ -2,7 +2,7 @@
     $shelves    = get_category_by_slug('shelves');
     $coolers    = get_category_by_slug('coolers');
     $pumps      = get_category_by_slug('pumps');
-    $dispensers = get_category_by_slug('dispensers');
+    $dispensers = get_category_by_slug('dispancers');
 
     $water       = get_page_by_path('about_water');
     $water_price = get_metadata('post', $water -> ID, 'price', true);
